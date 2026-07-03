@@ -6,7 +6,7 @@
   <title>逍遙農場 X 芒芒然 — 台南玉井芒果</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-24TB308L8R"></script>
@@ -31,6 +31,8 @@
     </div>
   </section>
 
+  <main>
+
   <!-- Products -->
   <section id="products">
     <div class="container">
@@ -39,13 +41,14 @@
 
         <!-- 愛文芒果 -->
         <div class="product-card">
-          <div class="product-img irwin-img"></div>
+          <div class="product-img irwin-img" role="img" aria-label="愛文芒果照片"></div>
           <div class="product-info">
             <h3>愛文芒果</h3>
             <p class="product-desc">玉井在地愛文，皮薄肉厚，香氣濃郁。10 斤裝郵局包裹，含運費，宅配到府。</p>
             <table class="price-table">
+              <caption class="sr-only">愛文芒果價格表</caption>
               <thead>
-                <tr><th>顆數</th><th>規格</th><th>價格（含運）</th></tr>
+                <tr><th scope="col">顆數</th><th scope="col">規格</th><th scope="col">價格（含運）</th></tr>
               </thead>
               <tbody>
                 <tr>
@@ -66,7 +69,7 @@
 
         <!-- 黑香芒果 -->
         <div class="product-card coming-soon-card">
-          <div class="product-img black-img">
+          <div class="product-img black-img" role="img" aria-label="黑香芒果照片">
             <span class="coming-soon-badge">即將上市</span>
           </div>
           <div class="product-info">
@@ -78,13 +81,14 @@
 
         <!-- 芒果乾 -->
         <div class="product-card">
-          <div class="product-img dried-img"></div>
+          <div class="product-img dried-img" role="img" aria-label="芒果乾照片"></div>
           <div class="product-info">
             <h3>芒果乾</h3>
             <p class="product-desc">用自家芒果精製，保留果實原味。超商取貨付款，免先匯款，安心方便。</p>
             <table class="price-table">
+              <caption class="sr-only">芒果乾價格表</caption>
               <thead>
-                <tr><th>規格</th><th>取貨方式</th><th>價格</th></tr>
+                <tr><th scope="col">規格</th><th scope="col">取貨方式</th><th scope="col">價格</th></tr>
               </thead>
               <tbody>
                 <tr>
@@ -109,7 +113,7 @@
 
         <div class="order-card">
           <div class="order-card-header order-header-mango">
-            <div class="order-icon">🥭</div>
+            <div class="order-icon" aria-hidden="true">🥭</div>
             <h3>新鮮芒果</h3>
             <p class="order-sub">愛文 / 黑香・郵局宅配</p>
           </div>
@@ -118,7 +122,7 @@
               <li>私訊告知品項與數量</li>
               <li>提供收件姓名、地址、電話</li>
               <li>確認後完成匯款，備註姓名、芒果品種與數量</li>
-              <li>郵局寄出，附上追蹤單號</li>
+              <li>我們透過郵局寄出。</li>
             </ol>
             <div class="btn-group">
               <a href="https://m.me/mangmanran" target="_blank" rel="noopener" class="btn-outline">FB 私訊</a>
@@ -128,7 +132,7 @@
 
         <div class="order-card">
           <div class="order-card-header order-header-dried">
-            <div class="order-icon">🌿</div>
+            <div class="order-icon" aria-hidden="true">🌿</div>
             <h3>芒果乾</h3>
             <p class="order-sub">7-11 賣貨便・全家好賣+</p>
           </div>
@@ -138,8 +142,8 @@
                 或<a href="https://famistore.famiport.com.tw/famistore/users/2754068/malls/6a3fdfac05c42388a91afee4" target="_blank" rel="noopener">全家好賣+</a>
                 下單</li>
               <li>我們建立超商出貨單</li>
-              <li>收到超商通知後前往取貨</li>
-              <li>現場付款，安心方便</li>
+              <li>您收到超商通知後前往取貨</li>
+              <li>超商現場付款，安心方便</li>
             </ol>
             <div class="btn-group">
               <a href="https://m.me/mangmanran" target="_blank" rel="noopener" class="btn-outline">FB 私訊</a>
@@ -150,6 +154,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer>
