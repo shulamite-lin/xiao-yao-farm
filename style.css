@@ -1,5 +1,5 @@
 /* ── Reset & Variables ── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { margin: 0; padding: 0; }
 
 :root {
   --orange:       #E8820C;
@@ -56,7 +56,7 @@ body {
 }
 
 #hero h1 {
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.08em;
@@ -211,7 +211,7 @@ h2::after {
   background: #0f1a0a url('images/mango-black-crop-2.jpg?v=1') center 65%/cover no-repeat;
 }
 .dried-img {
-  background: #3a1a00 url('images/dried-new.jpg') top center/cover no-repeat;
+  background: #3a1a00 url('images/dried-new-2.jpg') top center/cover no-repeat;
 }
 
 .product-info {
