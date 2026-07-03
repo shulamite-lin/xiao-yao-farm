@@ -244,6 +244,37 @@ td.price {
   font-style: italic;
 }
 
+/* ── Coming Soon ── */
+.coming-soon-card { opacity: 0.88; }
+
+.product-img {
+  position: relative;
+}
+
+.coming-soon-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--green);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.coming-soon-note {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.coming-soon-note a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
 /* ── Order Section ── */
 #order {
   padding: 5rem 0;
