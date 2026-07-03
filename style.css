@@ -440,6 +440,12 @@ footer .farm-name {
   margin-top: 0;
 }
 
+.last-updated {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.3);
+  margin-top: 0.3rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   #hero { min-height: 70vh; }
