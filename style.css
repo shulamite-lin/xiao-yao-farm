@@ -38,7 +38,7 @@ body {
   justify-content: center;
   text-align: center;
   background: linear-gradient(150deg, #b85000 0%, #e8820c 45%, #f5c340 100%) center/cover no-repeat;
-  background-image: url('images/hero.jpg');
+  background-image: url('images/hero2.jpg');
   overflow: hidden;
 }
 
@@ -46,7 +46,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(40, 15, 0, 0.35);
+  background: rgba(20, 8, 0, 0.45);
 }
 
 .hero-overlay {
@@ -89,6 +89,30 @@ body {
   transform: translateY(-1px);
 }
 
+.btn-group {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1.5px solid var(--border);
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-outline:hover {
+  border-color: var(--text-muted);
+  color: var(--text);
+}
+
 .btn-secondary {
   display: inline-block;
   background: var(--green);
@@ -106,18 +130,27 @@ body {
   transform: translateY(-1px);
 }
 
-/* ── Story ── */
-#story {
-  padding: 5rem 0;
-  text-align: center;
-  background: var(--bg);
+/* ── Hero Story (bottom-left of banner) ── */
+.hero-story {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  max-width: 420px;
+  z-index: 1;
+  text-align: left;
 }
 
-#story p {
-  max-width: 640px;
-  margin: 0 auto;
-  color: var(--text-muted);
-  font-size: 1.05rem;
+.hero-story p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.82rem;
+  line-height: 1.8;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 600px) {
+  .hero-story {
+    display: none;
+  }
 }
 
 /* ── Section Headings ── */
@@ -167,27 +200,18 @@ h2::after {
 
 .product-img {
   width: 100%;
-  height: 210px;
+  height: 240px;
   background-size: cover;
   background-position: center;
 }
 .irwin-img {
-  background: linear-gradient(135deg, #f0b429 0%, #e8520c 100%);
-  background-image: url('images/mango-irwin.jpg');
-  background-size: cover;
-  background-position: center top;
+  background: #2a0a00 url('images/mango-irwin-crop.jpg') top center/cover no-repeat;
 }
 .black-img {
-  background: linear-gradient(135deg, #5b7a3a 0%, #2d4a1e 100%);
-  background-image: url('images/extra.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #0f1a0a url('images/mango-black-crop.jpg?v=2') bottom center/cover no-repeat;
 }
 .dried-img {
-  background: linear-gradient(135deg, #d4882a 0%, #b05a00 100%);
-  background-image: url('images/hero.jpg');
-  background-size: cover;
-  background-position: right center;
+  background: #3a1a00 url('images/dried-new.jpg') top center/cover no-repeat;
 }
 
 .product-info {
@@ -365,15 +389,20 @@ footer .farm-name {
   letter-spacing: 0.1em;
 }
 
-footer a {
-  display: inline-block;
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+.footer-links a {
   color: var(--orange-light);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  margin-bottom: 1.5rem;
 }
-footer a:hover { text-decoration: underline; }
+.footer-links a:hover { text-decoration: underline; }
+.footer-sep {
+  color: rgba(255,255,255,0.4);
+  margin: 0 0.4rem;
+}
 
 .copyright {
   font-size: 0.78rem;
