@@ -79,6 +79,7 @@ body {
   letter-spacing: 0.08em;
   text-shadow: 0 3px 12px rgba(0,0,0,0.4);
   margin-bottom: 0.5rem;
+  word-break: keep-all;
 }
 
 .subtitle {
@@ -170,6 +171,12 @@ body {
   }
 }
 
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-story {
+    display: none;
+  }
+}
+
 /* ── Section Headings ── */
 h2 {
   font-size: clamp(1.5rem, 4vw, 2.1rem);
@@ -217,19 +224,22 @@ h2::after {
 
 .product-img {
   width: 100%;
-  height: 240px;
-  background-size: cover;
-  background-position: center;
+  aspect-ratio: 6 / 5;
+  overflow: hidden;
 }
-.irwin-img {
-  background: #2a0a00 url('images/mango-irwin-crop-2.jpg?v=1') top center/cover no-repeat;
+.product-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-.black-img {
-  background: #0f1a0a url('images/mango-black-crop-2.jpg?v=1') center 65%/cover no-repeat;
-}
-.dried-img {
-  background: #3a1a00 url('images/dried-new-2.jpg') top center/cover no-repeat;
-}
+.irwin-img { background: #2a0a00; }
+.irwin-img img { object-position: top center; }
+.black-img { background: #0f1a0a; }
+.black-img img { object-position: center 70%; }
+.dried-img { background: #3a1a00; }
+.dried-img img { object-position: top center; }
 
 .product-info {
   padding: 1.4rem 1.25rem 1.5rem;
