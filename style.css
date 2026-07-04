@@ -160,8 +160,10 @@ body {
 .quick-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   padding: 1.25rem 1.25rem;
   background: #fff;
   border-bottom: 1px solid var(--border);
@@ -174,11 +176,25 @@ body {
   letter-spacing: 0.03em;
   padding: 0.4rem 0.2rem;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: color 0.2s, border-color 0.2s;
 }
 .quick-nav a:hover {
   color: var(--orange-dark);
   border-color: var(--orange-dark);
+}
+
+@media (max-width: 600px) {
+  .quick-nav {
+    gap: 0.5rem;
+    padding: 1rem 0.75rem;
+  }
+  .quick-nav a {
+    font-size: 0.85rem;
+    letter-spacing: 0.01em;
+    padding: 0.3rem 0.15rem;
+  }
 }
 
 /* ── About ── */
