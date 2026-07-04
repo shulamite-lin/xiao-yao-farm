@@ -1,0 +1,9 @@
+# Claude Code 專案指示，不對外公開
+CLAUDE.md
+
+# 系統與工具暫存檔
+.DS_Store
+.playwright-mcp/
+
+# 圖片下載過程暫存檔
+images/*-b64.txt

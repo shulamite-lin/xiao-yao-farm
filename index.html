@@ -36,19 +36,33 @@
 </head>
 <body>
 
+  <a id="top"></a>
+
   <!-- Hero -->
   <section id="hero">
     <div class="hero-overlay">
       <h1>逍遙農場 X 芒芒然</h1>
       <p class="subtitle">台南玉井・自然農法・2026芒果季</p>
-      <a href="#order" class="btn-primary">立即訂購 →</a>
-    </div>
-    <div class="hero-story">
-      <p>台南玉井小農，一人獨力耕作六分地，種的是愛文與黑香兩種芒果。採較自然的方式種植，農藥少用，果肉香甜飽滿，只是賣相不若市售精品果靚麗。賣相不佳的，用心做成芒果乾，把每一顆芒果的甜都留下來。</p>
+      <a href="#order" class="btn-primary" title="前往如何訂購段落">立即訂購 →</a>
     </div>
   </section>
 
+  <nav class="quick-nav" aria-label="快速導覽">
+    <a href="#about" title="前往關於農場段落">關於農場</a>
+    <a href="#products" title="前往本季商品段落">本季商品</a>
+    <a href="#buy-mango" title="前往購買新鮮芒果段落">買芒果</a>
+    <a href="#buy-dried" title="前往購買芒果乾段落">買芒果乾</a>
+  </nav>
+
   <main>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>關於農場</h2>
+      <p class="about-text">台南玉井小農，一人獨力耕作六分地，種的是愛文與黑香兩種芒果。採較自然的方式種植，農藥少用，果肉香甜飽滿，只是賣相不若市售精品果靚麗。賣相不佳的，用心做成芒果乾，把每一顆芒果的甜都留下來。</p>
+    </div>
+  </section>
 
   <!-- Products -->
   <section id="products">
@@ -95,7 +109,7 @@
           <div class="product-info">
             <h3>黑香芒果</h3>
             <p class="product-desc">台灣本土品種，外皮深綠帶黑，果肉金黃細緻，香氣獨特。預計數日後開放訂購。</p>
-            <p class="coming-soon-note">🌿 歡迎先追蹤 <a href="https://www.facebook.com/mangmanran/" target="_blank" rel="noopener">FB 粉絲頁</a>，上市時第一時間通知</p>
+            <p class="coming-soon-note">🌿 歡迎先追蹤 <a href="https://www.facebook.com/mangmanran/" target="_blank" rel="noopener" title="前往芒芒然 Facebook 粉絲頁（外部連結）">FB 粉絲頁</a>，上市時第一時間通知</p>
           </div>
         </div>
 
@@ -133,7 +147,7 @@
       <h2>如何訂購</h2>
       <div class="order-grid">
 
-        <div class="order-card">
+        <div class="order-card" id="buy-mango">
           <div class="order-card-header order-header-mango">
             <div class="order-icon" aria-hidden="true">🥭</div>
             <h3>新鮮芒果</h3>
@@ -147,12 +161,12 @@
               <li>我們透過郵局寄出。</li>
             </ol>
             <div class="btn-group">
-              <a href="https://m.me/mangmanran" target="_blank" rel="noopener" class="btn-outline">FB 私訊</a>
+              <a href="https://m.me/mangmanran" target="_blank" rel="noopener" class="btn-outline" title="透過 Facebook Messenger 私訊逍遙農場 X 芒芒然（外部連結）">FB 私訊</a>
             </div>
           </div>
         </div>
 
-        <div class="order-card">
+        <div class="order-card" id="buy-dried">
           <div class="order-card-header order-header-dried">
             <div class="order-icon" aria-hidden="true">🌿</div>
             <h3>芒果乾</h3>
@@ -160,15 +174,15 @@
           </div>
           <div class="order-card-body">
             <ol class="order-steps">
-              <li><a href="https://myship.7-11.com.tw/general/detail/GM2606271825634" target="_blank" rel="noopener">7-11 賣貨便</a>
-                或<a href="https://famistore.famiport.com.tw/famistore/users/2754068/malls/6a3fdfac05c42388a91afee4" target="_blank" rel="noopener">全家好賣+</a>
+              <li><a href="https://myship.7-11.com.tw/general/detail/GM2606271825634" target="_blank" rel="noopener" title="前往 7-11 賣貨便下單頁面（外部連結）">7-11 賣貨便</a>
+                或<a href="https://famistore.famiport.com.tw/famistore/users/2754068/malls/6a3fdfac05c42388a91afee4" target="_blank" rel="noopener" title="前往全家好賣+下單頁面（外部連結）">全家好賣+</a>
                 下單</li>
               <li>我們建立超商出貨單</li>
               <li>您收到超商通知後前往取貨</li>
               <li>超商現場付款，安心方便</li>
             </ol>
             <div class="btn-group">
-              <a href="https://m.me/mangmanran" target="_blank" rel="noopener" class="btn-outline">FB 私訊</a>
+              <a href="https://m.me/mangmanran" target="_blank" rel="noopener" class="btn-outline" title="透過 Facebook Messenger 詢問逍遙農場 X 芒芒然（外部連結）">FB 詢問</a>
             </div>
           </div>
         </div>
@@ -184,7 +198,10 @@
     <div class="container">
       <div class="footer-tagline">🌿 在地小農・自然農法・用心種每一顆芒果 🌿</div>
       <div class="footer-links">
-        🏡 <a href="https://www.facebook.com/mangmanran/" target="_blank" rel="noopener">逍遙農場 X 芒芒然</a>
+        <a href="https://www.facebook.com/mangmanran/" target="_blank" rel="noopener" title="前往逍遙農場 X 芒芒然 Facebook 粉絲頁（外部連結）">
+          <svg class="fb-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.019 3.657 9.176 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.522 1.492-3.915 3.777-3.915 1.094 0 2.238.196 2.238.196v2.475h-1.26c-1.243 0-1.63.775-1.63 1.57v1.888h2.773l-.443 2.91h-2.33V22c4.78-.764 8.437-4.921 8.437-9.94z"/></svg>
+          逍遙農場 X 芒芒然
+        </a>
       </div>
       <p class="copyright">© 2026 逍遙農場 X 芒芒然 </p>
       <p class="last-updated">網頁最後更新：<span id="last-updated-date"></span></p>
@@ -195,6 +212,8 @@
     document.getElementById('last-updated-date').textContent =
       new Date(document.lastModified).toLocaleDateString('zh-TW', { year: 'numeric', month: '2-digit', day: '2-digit' });
   </script>
+
+  <a href="#top" class="back-to-top" title="回到頂端" aria-label="回到頂端">↑</a>
 
 </body>
 </html>
