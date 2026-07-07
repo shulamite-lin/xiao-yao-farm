@@ -6,6 +6,13 @@
   <title>逍遙農場 X 芒芒然｜台南玉井愛文・黑香芒果・芒果乾</title>
   <meta name="description" content="台南玉井小農直營，自然農法栽培愛文芒果、黑香芒果，並自製芒果乾。新鮮宅配到府，超商取貨付款安心方便，歡迎私訊訂購。">
   <meta name="google-site-verification" content="yn7DnBxduXErcX7DaW1TDB-qD6pIptephlq8cuaASfE" />
+  <link rel="canonical" href="https://shulamite-lin.github.io/xiao-yao-farm/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="images/favicon-512.png" sizes="512x512" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -33,6 +40,63 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-24TB308L8R');
+  </script>
+
+  <!-- 結構化資料：農場基本資料與商品 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://shulamite-lin.github.io/xiao-yao-farm/#organization",
+        "name": "逍遙農場 X 芒芒然",
+        "url": "https://shulamite-lin.github.io/xiao-yao-farm/",
+        "logo": "https://shulamite-lin.github.io/xiao-yao-farm/images/favicon-512.png",
+        "image": "https://shulamite-lin.github.io/xiao-yao-farm/images/hero2-1.jpg",
+        "description": "台南玉井小農直營，自然農法栽培愛文芒果、黑香芒果，並自製芒果乾。",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "玉井區",
+          "addressRegion": "台南市",
+          "addressCountry": "TW"
+        },
+        "sameAs": [
+          "https://www.facebook.com/mangmanran/"
+        ]
+      },
+      {
+        "@type": "Product",
+        "name": "愛文芒果",
+        "image": "https://shulamite-lin.github.io/xiao-yao-farm/images/mango-irwin.jpg",
+        "description": "熱門經典品種，皮薄肉厚，香氣濃郁，台南玉井自然農法栽培。10 斤裝郵局包裹，含運費，宅配到府。",
+        "brand": { "@id": "https://shulamite-lin.github.io/xiao-yao-farm/#organization" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "TWD",
+          "lowPrice": "600",
+          "highPrice": "800",
+          "offerCount": "2",
+          "availability": "https://schema.org/InStock",
+          "url": "https://shulamite-lin.github.io/xiao-yao-farm/#products"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "芒果乾",
+        "image": "https://shulamite-lin.github.io/xiao-yao-farm/images/dried-2.jpg",
+        "description": "自家芒果大顆切片，低糖保留果實原味，口感軟韌更香甜，200g / 包。",
+        "brand": { "@id": "https://shulamite-lin.github.io/xiao-yao-farm/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "TWD",
+          "price": "250",
+          "availability": "https://schema.org/InStock",
+          "url": "https://shulamite-lin.github.io/xiao-yao-farm/#products"
+        }
+      }
+    ]
+  }
   </script>
 </head>
 <body>
